@@ -1,4 +1,7 @@
 # insta_poo
+clonar repositório
+obs: o projeto está na brench "ariane"
+
 instalando dependencias:
 pip install -r requirements.txt
 
