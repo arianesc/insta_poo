@@ -3,11 +3,11 @@
 
 git init
 
-git add origin "link do rep"
+   git add origin "link do rep"
 
-obs: o projeto está na brench "ariane"
+   obs: o projeto está na brench "ariane"
 
-git clone origin ariane
+   git clone origin ariane
 
 2. instalando dependencias:
 pip install -r requirements.txt
