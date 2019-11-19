@@ -1,10 +1,10 @@
 # insta_poo
 
 migração:
-"""python manage.py migrate
-"""
+python manage.py migrate
+
 criar super usuario:
-""" python manage.py createsuperuser """ 
+python manage.py createsuperuser
 
 rodar o servidor:
 python manage.py runserver
