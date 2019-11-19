@@ -1,24 +1,30 @@
 # insta_poo
-clonar repositório
+1. clonar repositório
+
+git init
+
+git add origin "link do rep"
 
 obs: o projeto está na brench "ariane"
 
-instalando dependencias:
+git clone origin ariane
+
+2.instalando dependencias:
 pip install -r requirements.txt
 
-migração:
+3.migração:
 python manage.py migrate
 
-criar super usuario:
+4.criar super usuario:
 python manage.py createsuperuser
 
-rodar o servidor:
+5.rodar o servidor:
 python manage.py runserver
 
-entrar no admin para criar um usuário
+6.entrar no admin para criar um usuário
 /admin
 
-pagina de login para logar com o usuario criado :
+7.pagina de login para logar com o usuario criado :
 /login
 
 
