@@ -1,4 +1,6 @@
 # insta_poo
+instalando dependencias:
+pip install -r requirements.txt
 
 migração:
 python manage.py migrate
