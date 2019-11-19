@@ -1,0 +1,31 @@
+{% load static %}
+<a href="{% url 'logout' %}"> Logout </a>
+
+<h1>Feed</h1>
+
+{% block content %}
+<table border="1">
+    <thead>
+        <tr>
+            <th>Legenda</th>
+            <th>Foto</th>
+        </tr>
+    </thead>
+
+    {% for foto in object_list %}
+    <tbody>
+        <td>{{ foto.legenda }}</td>
+        <td><img src="{{foto.imagem.url}}" alt=" Imagem "></td>
+        <td><a href="{% url 'view' foto.id %}">view</a></td>
+        <td><a href="{% url 'edit' foto.id %}">edit</a></td>
+        <td><a href="{% url 'delete' foto.id %}">delete</a></td>
+
+    </tbody>
+    {% endfor %}
+
+
+
+
+</table>
+<td><a href="{% url 'new' %}">Adicionar foto</a></td>
+{% endblock content %}

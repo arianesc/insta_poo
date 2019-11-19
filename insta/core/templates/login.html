@@ -1,0 +1,50 @@
+{% block content %}
+<section class="wrap-section-colabora">
+    <div>
+        <div class="container-fluid wrap-trabalhe">
+            <div class="wrap-center-login">
+                <div class="center-login">
+                    <div class="wrap-header-login">
+                        <div class="header-empreendimentos2">
+                            <h1>Área do usuário</h1>
+                        </div>
+                    </div>
+
+                    <form class="login_form" method="POST">
+
+                        {% csrf_token %}
+
+                        {% if login_form.subject.errors %}
+                        <ul>
+                            {% for error in login_form.subject.errors %}
+                            <li><strong>{{ error|escape }}</strong></li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+
+                        {% if user_not_exist %}
+                        <ul>
+                            <li><strong>username ou senha inválida</strong></li>
+                        </ul>
+                        {% endif %}
+
+
+                        {% for field in login_form %}
+                        <div class="wrap-input wrap-input-login">
+                            {{ field }}
+                        </div>
+
+                        {% endfor %}
+
+                        
+                        <div class="wrap-secao-btn wrap-input-login">
+                            <button type="submit" 
+                                class="submit-btn login">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
